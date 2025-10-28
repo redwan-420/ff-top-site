@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Fire Diamond Top-Up</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #0f172a, #1e293b);
+      color: white;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #38bdf8;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #cbd5e1;
+    }
+
+    input {
+      padding: 10px;
+      width: 250px;
+      border-radius: 8px;
+      border: none;
+      margin: 15px 0;
+      outline: none;
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .pack {
+      background: #1e293b;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+
+    .pack:hover {
+      transform: scale(1.05);
+      background: #334155;
+    }
+
+    .pack h3 {
+      color: #38bdf8;
+      margin-bottom: 5px;
+    }
+
+    .pack p {
+      color: #94a3b8;
+      margin: 5px 0;
+    }
+
+    button {
+      background: #38bdf8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔥 Free Fire Diamond Top-Up 🔥</h1>
+  <p>আপনার Free Fire ID দিন এবং প্যাক সিলেক্ট করুন নিচে থেকে 👇</p>
+
+  <input type="text" id="gameId" placeholder="Enter your Free Fire ID" />
+
+  <div class="container">
+    <div class="pack"><h3>💎 25 Diamonds</h3><p>Price: 24৳</p><button onclick="buyNow('25 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 50 Diamonds</h3><p>Price: 42৳</p><button onclick="buyNow('50 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 120 Diamonds</h3><p>Price: 85৳</p><button onclick="buyNow('120 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 240 Diamonds</h3><p>Price: 170৳</p><button onclick="buyNow('240 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 355 Diamonds</h3><p>Price: 250৳</p><button onclick="buyNow('355 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 505 Diamonds</h3><p>Price: 365৳</p><button onclick="buyNow('505 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 610 Diamonds</h3><p>Price: 420৳</p><button onclick="buyNow('610 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 850 Diamonds</h3><p>Price: 580৳</p><button onclick="buyNow('850 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 1090 Diamonds</h3><p>Price: 740৳</p><button onclick="buyNow('1090 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 1240 Diamonds</h3><p>Price: 820৳</p><button onclick="buyNow('1240 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 1850 Diamonds</h3><p>Price: 1240৳</p><button onclick="buyNow('1850 Diamonds + Bonus')">Buy Now</button></div>
+    <div class="pack"><h3>💎 2090 Diamonds</h3><p>Price: 1380৳</p><button onclick="buyNow('2090 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 2530 Diamonds</h3><p>Price: 1600৳</p><button onclick="buyNow('2530 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 5060 Diamonds</h3><p>Price: 3210৳</p><button onclick="buyNow('5060 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 10120 Diamonds</h3><p>Price: 6370৳</p><button onclick="buyNow('10120 Diamonds')">Buy Now</button></div>
+    <div class="pack"><h3>💎 weekly</h3><p>Price: 165৳</p><button onclick="buyNow('weekly')">Buy Now</button></div>
+    <div class="pack"><h3>💎 monthly</h3><p>Price: 790৳</p><button onclick="buyNow('monthly')">Buy Now</button></div>
+  </div>
+
+  <footer>© 2025 Free Fire Top-Up Demo Site | Created by Redwan Ahmed</footer>
+
+  <script>
+    function buyNow(pack) {
+      const id = document.getElementById('gameId').value.trim();
+      if (!id) {
+        alert("⚠️ প্রথমে আপনার গেম আইডি লিখুন!");
+        return;
+      }
+      alert(`✅ অর্ডার সফল হয়েছে!\nGame ID: ${id}\nPack: ${pack}\n\nধন্যবাদ আমাদের সাইট ব্যবহার করার জন্য 💖`);
+    }
+  </script>
+</body>
+</html>
