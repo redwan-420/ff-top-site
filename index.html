@@ -90,9 +90,10 @@
 
   <h1>🔥 Free Fire Diamond Top-Up 🔥</h1>
   <p>আপনার Free Fire ID দিন এবং প্যাক সিলেক্ট করুন নিচে থেকে 👇</p>
+  <p>আমাদের সাইটটি অফিসিয়াল ভাবে এখনো তৈরি হয় নাই, দয়া করে এই 01764362619 নাম্বারে হোয়াটসঅ্যাপ এ যোগাযোগ করুন ।</p>
 
   <input type="text" id="gameId" placeholder="Enter your Free Fire ID" />
-
+  
   <div class="container">
     <div class="pack"><h3>💎 25 Diamonds</h3><p>Price: 24৳</p><button onclick="buyNow('25 Diamonds')">Buy Now</button></div>
     <div class="pack"><h3>💎 50 Diamonds</h3><p>Price: 42৳</p><button onclick="buyNow('50 Diamonds')">Buy Now</button></div>
@@ -113,17 +114,30 @@
     <div class="pack"><h3>💎 monthly</h3><p>Price: 790৳</p><button onclick="buyNow('monthly')">Buy Now</button></div>
   </div>
 
-  <footer>© 2025 Free Fire Top-Up Demo Site | Created by Redwan Ahmed</footer>
+  <footer>© 2025 Free Fire Top-Up Site | Created by Redwan Ahmed</footer>
 
-  <script>
-    function buyNow(pack) {
-      const id = document.getElementById('gameId').value.trim();
-      if (!id) {
-        alert("⚠️ প্রথমে আপনার গেম আইডি লিখুন!");
-        return;
-      }
-      alert(`✅ অর্ডার সফল হয়েছে!\nGame ID: ${id}\nPack: ${pack}\n\nধন্যবাদ আমাদের সাইট ব্যবহার করার জন্য 💖`);
+  <<script>
+  function buyNow(pack) {
+    // ইউজার আইডি ইনপুট থেকে নিচ্ছে
+    const id = document.getElementById('gameId').value.trim();
+
+    if (!id) {
+      alert("⚠️ প্রথমে আপনার Free Fire ID দিন!");
+      return;
     }
-  </script>
-</body>
-</html>
+
+    // এখানে তোমার WhatsApp নাম্বার দাও (880 দিয়ে শুরু, + বা 0 দিও না)
+    const phone = "8801764362619"; 
+
+    // অটো মেসেজ তৈরি হচ্ছে
+    const message = `New Diamond Order 💎%0AFree Fire ID: ${id}%0APackage: ${pack}%0AStatus: Pending`;
+
+    // WhatsApp লিংক তৈরি হচ্ছে
+    const link = `https://wa.me/${phone}?text=${message}`;
+
+    // WhatsApp খুলে দিচ্ছে (নতুন ট্যাবে)
+    window.open(link, "_blank");
+  }
+</script>
+>
+  
